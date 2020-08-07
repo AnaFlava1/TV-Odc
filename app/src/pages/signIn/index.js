@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-import { StatusBar } from 'react-native';
-import { StackActions, NavigationActions } from 'react-navigation';
-
-import api from '../../services/api';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { StatusBar } from 'react-native'
+import { StackActions, NavigationActions } from 'react-navigation'
+import api from '../../services/api'
 
 import {
   Container,
@@ -92,7 +90,7 @@ export default class SignIn extends Component {
         />
         {this.state.error.length !== 0 && <ErrorMessage>{this.state.error}</ErrorMessage>}
         <Button onPress={this.handleSignInPress}>
-          <ButtonText>Entrar</ButtonText>
+           <ButtonText>Entrar</ButtonText>
         </Button>
       </Container>
     );
